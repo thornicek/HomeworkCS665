@@ -98,6 +98,23 @@ mvn checkstyle:checkstyle
 target/site/checkstyle.html
 ```
 
+# Assignment 6: Refractoring Assignment 2
+
+# Assignment Overview
+
+old github link
+
+# 1st point of refactor
+
+My first point of refactoring was in the Driver.java and the Main.java classes. Looking back at my code I have realized that everytime I initialize a driver, I assign a delivery to them. I find that impractical for future usage, as I want to initialize a driver without any delivery instructions. Plus it's dead code, as I add the driver to the delivery list after, where all the drivers get the request.
+
+# 1st point of refactor fix
+
+I have removed the DeliveryRequest object, from the constructor of the driver.
+
+# 2nd point of refactor
+
+My second point of refactor was in the Driver
 
 
 
